@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,47 +13,65 @@
       color: #f1f5f9;
       line-height: 1.6;
     }
+
     header {
       text-align: center;
       padding: 3rem 1rem;
       background: #1e293b;
     }
+
     header h1 {
       font-size: 2.2rem;
       color: #38bdf8;
     }
+
     header p {
       font-size: 1rem;
       color: #94a3b8;
     }
+
     section {
       max-width: 900px;
       margin: auto;
       padding: 2rem 1rem;
     }
+
     h2 {
       border-left: 4px solid #38bdf8;
       padding-left: 10px;
       color: #38bdf8;
     }
+
     .project {
       margin-bottom: 2rem;
       background: #1e293b;
       padding: 1rem;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
+
     .project h3 {
       color: #f8fafc;
       margin-bottom: 0.5rem;
     }
+
+    .project img {
+      transition: transform 0.3s ease;
+    }
+
+    .project img:hover {
+      transform: scale(1.03);
+    }
+
     a {
       color: #38bdf8;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -62,6 +81,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -72,7 +92,8 @@
   <section>
     <h2>About Me</h2>
     <p>
-      I’m a Unity Developer with 4+ years of experience in creating simulators, AR/VR experiences, and interactive prototypes. 
+      I’m a Unity Developer with 4+ years of experience in creating simulators, AR/VR experiences, and interactive
+      prototypes.
       Currently expanding my skills into web development to combine 3D with the web for next-gen experiences.
     </p>
   </section>
@@ -80,24 +101,41 @@
   <section>
     <h2>Projects</h2>
 
-    <div class="project">
-      <h3>🚗 Driving Simulator</h3>
-      <p>Created a driving simulator with Logitech G25 steering integration and full replay system.</p>
-      <p><strong>Tech:</strong> Unity, C#, Physics, Logitech SDK</p>
-    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
 
-    <div class="project">
-      <h3>🪖 AR Submarine</h3>
-      <p>Built an AR experience for L&T Defense Expo using Vuforia with optimized 3D assets.</p>
-      <p><strong>Tech:</strong> Unity, AR, Vuforia, Blender</p>
-    </div>
+      <div class="project">
+        <img src="images/driving_simulator.png" alt="Driving Simulator" style="width:100%; border-radius:10px;">
+        <h3>🚗 Driving Simulator</h3>
+        <p>Created a full driving simulator game with Logitech G25 steering and gear integration. Implemented vehicle
+          physics, replay system, and realistic camera setups.</p>
+        <p><strong>Tech:</strong> Unity, C#, Physics, Logitech SDK</p>
+      </div>
 
-    <div class="project">
-      <h3>🚴 Cycle Simulator</h3>
-      <p>Multiplayer simulator using Mirror networking and Arduino integration for real-time inputs.</p>
-      <p><strong>Tech:</strong> Unity, C#, Mirror, Arduino</p>
-    </div>
+      <div class="project">
+        <img src="images/ar_submarine.png" alt="AR Submarine" style="width:100%; border-radius:10px;">
+        <h3>🪖 AR Submarine</h3>
+        <p>Built an AR experience for L&T Defense Expo using Vuforia and optimized 3D assets for smooth mobile
+          performance.</p>
+        <p><strong>Tech:</strong> Unity, AR, Vuforia, Blender</p>
+      </div>
 
+      <div class="project">
+        <img src="images/cycle_simulator.png" alt="Cycle Simulator" style="width:100%; border-radius:10px;">
+        <h3>🚴 Cycle Simulator</h3>
+        <p>Developed a multiplayer cycle simulator integrated with Arduino sensors for real-time data and backend APIs
+          for analytics.</p>
+        <p><strong>Tech:</strong> Unity, C#, Mirror, Arduino</p>
+      </div>
+
+      <div class="project">
+        <img src="images/metaverse.png" alt="Metaverse Prototype" style="width:100%; border-radius:10px;">
+        <h3>🌐 Metaverse Prototype</h3>
+        <p>Built a small multiplayer environment using Mirror networking with avatar movement and voice chat prototype.
+        </p>
+        <p><strong>Tech:</strong> Unity, Mirror, Photon, Blender</p>
+      </div>
+
+    </div>
   </section>
 
   <section>
@@ -112,4 +150,5 @@
   </footer>
 
 </body>
+
 </html>
